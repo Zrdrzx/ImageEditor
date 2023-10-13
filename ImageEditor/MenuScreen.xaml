@@ -35,9 +35,7 @@
                 <RadioButton Content="Login"
                                  Height="50"
                                  Foreground="White"
-                                 FontSize="20"
-                                 Margin="0,0,0,0"
-                                 
+                                 FontSize="20"                
                                  Style="{StaticResource MenuButtonTheme}"/>
 
                 <RadioButton Content="Editor"

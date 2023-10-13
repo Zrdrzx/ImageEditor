@@ -7,9 +7,21 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-
-        <GridSplitter Grid.Column="1" Width="5" HorizontalAlignment="Stretch" Background="Transparent" 
-                      />
+        <Image Width="300"
+                Height="430"
+                Source="/Images/menuImage1.png"
+                HorizontalAlignment="Left"
+                Margin="40,10,10,0"
+                VerticalAlignment="Top"
+                Stretch="Fill"/>
+        
+        <Image Width="300"
+               Height="430"
+               Source="/Images/menuImage2.png"
+               HorizontalAlignment="Right"
+               Margin="10,10,40,0"
+               VerticalAlignment="Top"
+               Stretch="Fill"/>
 
     </Grid>
 </UserControl>
