@@ -64,16 +64,17 @@
 
             </StackPanel>
 
-            <TextBox Width="300"
+            <TextBlock Width="705"
                      Height="40"
                      VerticalAlignment="Center"
-                     HorizontalAlignment="Left"
-                     Margin="5"
-                     Grid.Column="1">
-                
-                     
-                
-            </TextBox>
+                     Margin="5,0,0,0"
+                     Background="Transparent"
+                     Foreground="Azure"
+                     Grid.Column="1" Text="This app lets you edit and read data of images!!" FontSize="24" TextAlignment="Center"/>
+            <Grid Grid.Column="1" HorizontalAlignment="Left" Height="525" Grid.Row="1" VerticalAlignment="Center" Width="357"
+                  />
+            <Grid Grid.Column="1" HorizontalAlignment="Left" Height="525" Margin="363,0,0,0" Grid.Row="1" VerticalAlignment="Center" Width="357"/>
+
         </Grid>
     </Border>
 
