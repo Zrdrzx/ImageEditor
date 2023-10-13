@@ -9,7 +9,11 @@ namespace ImageEditor.MVVM.ViewModel
 {
     class MainViewModel : ObservableObject
     {
+        public RelayCommand HomeViewCommand { get; set; }
+        public RelayCommand LoginViewCommand { get; set; }
         public HomeViewModel HomeVM { get; set; }
+        public LoginViewModel LoginVM { get; set; }
+        
         private object _currentView;
 
         public object CurrentView
@@ -24,6 +28,21 @@ namespace ImageEditor.MVVM.ViewModel
         public MainViewModel()
         {
             HomeVM = new HomeViewModel();
+            LoginVM = new LoginViewModel(); 
+
+            CurrentView = HomeVM;
+
+            HomeViewCommand = new RelayCommand(o =>
+            {
+                CurrentView = HomeVM;
+            });
+
+            LoginViewCommand = new RelayCommand(o =>
+            {
+                CurrentView = LoginVM;
+            });
+            
+          
         }
 
     }
